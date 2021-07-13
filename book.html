@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book</title>
+
+  <script>
+    var bookArr = [];
+    function addList() {
+      var book = document.getElementById('book');
+      if (book.value != "") {
+        bookArr.push(book.value);
+        book.value = "";
+        book.focus();
+      }
+      showList();
+    }
+
+    function showList() {
+      var p = "";
+      p += `<ul>`;
+      for (var i = 0; i < bookArr.length; i++) {
+        p += `<li>${bookArr[i]}</li>`;
+      }
+      p += `</ul>`;
+      document.getElementById('bookList').innerHTML = p;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>도서 목록</h1>
+  <hr>
+  <label for="book">도서: </label>
+  <input type="text" id="book" autofocus>
+  <button id="add" onclick="addList()">추가</button>
+
+  <p id="bookList"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>주어진 입력 폼을 만들어보세요.</h3>
+
+  <fieldset>
+    <legend>개인정보</legend>
+
+    <form action="">
+      <label for="name">이름:</label>
+      <input type="text" id="name"><br>
+
+      <label>성별:</label>
+      <input type="radio" id="male" name="mf">
+      <label for="male">남</label>
+      <input type="radio" id="female" name="mf">
+      <label for="female">여</label><br>
+
+      <label for="birth">생년월일:</label>
+      <input type="date" id="birth"><br>
+
+      <label for="email">이메일:</label>
+      <input type="email" id="email">
+
+      <input type="submit" value="입력">
+    </form>
+  </fieldset>
+
+  <fieldset>
+    <legend>Question</legend>
+    <form action="">
+      <label>올해 안에 취업할 계획이 있으십니까?</label><br>
+      <input type="radio" id="yes" name="plan">
+      <label for="yes">예</label>
+      <input type="radio" id="no" name="plan">
+      <label for="no">아니오</label><br>
+
+      <label>어렵다고 느껴지는 과목(?)을 선택해주세요.(복수 응답 가능)</label><br>
+      <input type="checkbox" id="python" name="subject">
+      <label for="python">Python</label>
+      <input type="checkbox" id="html" name="subject">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="subject">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="subject">
+      <label for="js">Javascript</label>
+    </form>
+
+  </fieldset>
+</body>
+
+</html>
